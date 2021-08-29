@@ -1,0 +1,28 @@
+frw arquivo.html 
+
+pegar todas as classes do arquivo html
+	grep -Eo  --color "class=([!-z]*('|\"))"  skeleton.html > classes
+	
+pegar os nomes das [classes] no arquivo html
+separar apenas os nomes de clases
+	grep -Eo  "('|\")[!-z]*\1" classes | sed 's/^.//g' | sed 's/.$//g' > nomes
+
+colocar um [.] no começo de cada nome das classes
+colocar [ { ] depois do nome de uma classe (na mesma linha)
+	sed 's/^/./' nomes | sed 's/$/ {/' > seletores
+
+
+inserir o codigo do skeletom.css para cada css class selector (nova linha)
+coloca [ } ] depois do codigo skeletom.css (nova linha)
+escrever tudo em um arquivo [styles.css] na mesma pasta ./ 
+	for s in $(sed 's/ {/{/g' seletores); do echo -e "$s\n $(cat skeleton.css) \n}"  ; done | sed 's/{$/ {/' > style.css
+
+
+
+
+
+
+
+
+
+

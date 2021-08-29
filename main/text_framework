@@ -1,0 +1,70 @@
+textFrameWork
+
+text:
+	text-align
+	text-align-last
+	text-combine-upright
+	text-decoration
+	text-decoration-color
+	text-decoration-line
+	text-decoration-skip
+	text-decoration-skip-ink
+	text-decoration-style
+	text-decoration-thickness
+	text-emphasis
+	text-emphasis-color
+	text-emphasis-position
+	text-emphasis-style
+	text-indent
+	text-justify
+	text-orientation
+	text-overflow
+	text-rendering
+	text-shadow
+	text-size-adjust
+	text-transform
+	text-underline-offset
+	text-underline-position
+	24
+font:
+	font-family
+	font-family (@font-face)
+	font-feature-settings
+	@font-feature-values
+	font-kerning
+	font-language-override
+	font-optical-sizing
+	font-size
+	font-size-adjust
+	font-stretch
+	font-stretch (@font-face)
+	font-style
+	font-style (@font-face)
+	font-synthesis
+	font-variant
+	font-variant (@font-face)
+	font-variant-alternates
+	font-variant-caps
+	font-variant-east-asian
+	font-variant-ligatures
+	font-variant-numeric
+	font-variant-position
+	font-variation-settings
+	font-variation-settings (@font-face)
+	font-weight
+	font-weight (@font-face)
+	27
+letter:
+	letter-spacing
+	1
+line:
+	line-break
+	line-gap-override (@font-face)
+	line-height
+	line-height-step
+	4
+word:
+	word-break
+	word-spacing
+	word-wrap
+	3
